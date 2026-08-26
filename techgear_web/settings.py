@@ -27,8 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1", 
-    "taller2-pydeploy.vercel.app/",
-    "taller2-pydeploy.onrender.com/",
+    "taller2-pydeploy.vercel.app",
+    "taller2-pydeploy.onrender.com",
 ]
 
 

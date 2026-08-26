@@ -21,7 +21,7 @@ urlpatterns = [
     # Rutas para Pedidos
     path("pedido/<str:producto_id>/", views.realizar_pedido, name="realizar_pedido"),
     path("pedidos/", views.pedidos, name="pedidos"),
-    # ⚠️ Corregido: Ya no usa '/' en conflicto, ahora es 'swagger/'
+    # Ruta para la documentación de la API (Swagger)
     path(
         "swagger/",
         lambda request: redirect("http://127.0.0.1:8001/docs"),
