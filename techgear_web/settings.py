@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-sf)9^ao)#f#_n)*0&k%4(lojiot$kejakf_ah7+s33nvq$$#7o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "127.0.0.1", "localhost",
-    "taller2-pydeploy.vercel.app",
-    "taller2-pydeploy.onrender.com",
+    "taller2-pydeploy.vercel.app", # Deploy Frontend
+    "taller2-pydeploy.onrender.com", # Desploy Backend
 ]
 
 
@@ -120,6 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Esto le dice a Django que busque la carpeta "static" en la raíz del proyecto
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "tienda/static"
+]
 
 
 # Email
