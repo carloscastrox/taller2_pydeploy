@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-sf)9^ao)#f#_n)*0&k%4(lojiot$kejakf_ah7+s33nvq$$#7o
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "127.0.0.1", 
+    "127.0.0.1", "localhost",
     "taller2-pydeploy.vercel.app",
     "taller2-pydeploy.onrender.com",
 ]
