@@ -4,27 +4,27 @@ Este proyecto proporciona una API REST para la gestión de un catálogo de produ
 
 La aplicación permite crear, consultar, actualizar y eliminar productos, además de generar pedidos asociados a los productos disponibles y controlar automáticamente el stock.
 
-## 📄 Description
+## 📄 Descripción
 
-**TechGear API** is a RESTful web API designed to manage products and orders for a technology catalog.
+**TechGear API** es una API web RESTful diseñada para gestionar productos y pedidos de un catálogo de tecnología.
 
-The application is built with **Python, FastAPI, MongoDB and Pydantic**, providing a simple and efficient backend for managing product information and processing orders.
+La aplicación está desarrollada con **Python, FastAPI, MongoDB and Pydantic**, ofreciendo un backend sencillo y eficiente para gestionar la información de los productos y procesar pedidos.
 
-The API allows users to:
+La API permite a los usuarios:
 
-* Create new products.
-* List all available products.
-* Update existing products.
-* Delete products.
-* Create orders associated with products.
-* Validate product existence.
-* Validate available stock before creating an order.
-* Calculate the total value of each order.
-* Automatically decrease the product stock after a successful order.
+Crear nuevos productos.
+Listar todos los productos disponibles.
+Actualizar productos existentes.
+Eliminar productos.
+Crear pedidos asociados a productos.
+Validar la existencia de productos.
+Validar el stock disponible antes de crear un pedido.
+Calcular el valor total de cada pedido.
+Reducir automáticamente el stock del producto tras completar un pedido con éxito.
 
-The API uses **MongoDB** as its database and **Motor** as the asynchronous MongoDB driver.
+La API utiliza **MongoDB** como base de datos y **Motor** como controlador asíncrono para MongoDB.
 
-## 🛠️ Technologies
+## 🛠️ Tecnologías
 
 * **Python**
 * **FastAPI**
@@ -36,7 +36,7 @@ The API uses **MongoDB** as its database and **Motor** as the asynchronous Mongo
 
 Las dependencias del proyecto se encuentran definidas en `requirements.txt`.
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```text
 taller2_pydeploy/
@@ -60,7 +60,7 @@ Define los modelos de datos utilizando Pydantic para validar la información de 
 
 Gestiona la conexión con MongoDB y define las colecciones `productos` y `pedidos`. La conexión utiliza la variable de entorno `MONGODB_URL`.
 
-## 🚀 Installation
+## 🚀 Instalación
 
 Clona el repositorio:
 
@@ -80,7 +80,7 @@ Instala las dependencias:
 pip install -r requirements.txt
 ```
 
-## 🔐 Environment Variables
+## 🔐 Variables de Entorno
 
 Crea un archivo `.env` en la raíz del proyecto:
 
